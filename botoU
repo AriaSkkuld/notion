@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <style>
-    :root {
+       :root {
       --my-color:#34495e;
       --my-color-accent:#2c3e50;
       --black: #3c3c3c;
@@ -40,7 +38,7 @@
     }
 
     i {
-      padding-right: 2px;
+      padding-right: 0px;
     }
 
     .btn {
@@ -48,7 +46,7 @@
       color: #ffffff;
       font-family: 'Manrope';
       display: inline-block;
-      margin: 10px;
+      margin: 6px;
     }
 
     .my-color {
@@ -221,7 +219,7 @@
     }
 
     .rounded {
-      border-radius: 20px;
+      border-radius: 15px;
     }
 
     .small {
@@ -230,28 +228,43 @@
     }
 
     .mid {
-      padding: 10px 40px;
-      font-size: 12px;
+      padding: 10px 20px;
+      font-size: 16px;
     }
 
     .large {
       padding: 15px 60px;
       font-size: 18px;
     }
+  .material-icons.md { font-size: 24px; }
   </style>
-
 </head>
 
 <body>
+  <button class="btn mid blue rounded threeD" type="button" onclick="navigateUoc()"> 
+    <i class="material-icons md">school</i>
+  </button> <br/> 
 
-  <button class="btn large my-color rounded threeD" type="button" onclick="navigate()"> <i class="fa-regular fa-star"></i> My Button</button>
+  <button class="btn mid red rounded threeD" type="button" onclick="navigateMail()"> 
+    <i class="material-icons md">email</i>  
+  </button>  <br/> 
+  <button class="btn mid yellow rounded threeD" type="button" onclick="navigateDrive()"> 
+    <i class="material-icons md">folder_shared</i>  
+  </button>
   
   <script>
-    function navigate() {
-      window.open("https://example.com", '_blank').focus();
+    function navigateUoc() {
+      window.open("https://id-provider.uoc.edu/idp/profile/SAML2/POST/SSO?execution=e1s1&lang=ca", '_blank').focus();
+    }
+
+    function navigateMail() {
+          window.open("https://mail.google.com/mail/u/0/#inbox", '_blank').focus();
+    }
+
+    function navigateDrive() {
+          window.open("https://drive.google.com/drive/u/0/my-drive", '_blank').focus();
     }
   </script>
 
 </body>
-
 </html>
