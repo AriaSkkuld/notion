@@ -16,8 +16,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  flex-direction: column;
-  min-height: 100%;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 button::-moz-focus-inner { 
@@ -29,7 +29,7 @@ button::-moz-focus-inner {
     margin:  0 auto;
     /* height: 330px; */
     /* width: 350px; */
-    font-size: 14px;
+    font-size: 12px;
     /* box-shadow: 0px 1px 4px rgba(0,0,0,0.4); */
 }
 table {
@@ -155,7 +155,7 @@ footer a:link {
     <div class="">
         <div id="calendari"></div>
     </div>
-    
+
     <script>
         var mesos = [
             'Gener',
@@ -192,12 +192,12 @@ footer a:link {
             'ds'
         ];
 
-Number.prototype.pad = function(num) {
-    var str = '';
-    for(var i = 0; i < (num-this.toString().length); i++)
-        str += '0';
-    return str += this.toString();
-}
+        Number.prototype.pad = function(num) {
+            var str = '';
+            for(var i = 0; i < (num-this.toString().length); i++)
+            str += '0';
+            return str += this.toString();
+        }
 
 function calendari(widget, data)
 {
@@ -280,7 +280,7 @@ function calendari(widget, data)
 			  -inici_mes);
 
     /* 6 setmanes per cobrir totes les posiblitats
-     *  Quedaria mes consistent alhora de mostrar molts mesos 
+     *  Quedaria mes consistent a l'hora de mostrar molts mesos 
      *  en una quadricula */
     for(var s = 0; s < 6; s++)
     {
