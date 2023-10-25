@@ -22,6 +22,7 @@
             --rosa: #AE445A;
             --actiu: #F39F5A;
             --mouseSobre: pink;
+            --blanc: white;
 
             --borde: #1F1717;
             --bordeExterior: #1F1717;
@@ -56,7 +57,7 @@
 table {
     border-collapse: collapse;
     table-layout: fixed;
-    border: solid 2pt var(--granate);
+    border: solid 2pt var(--bordeExterior);
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
     background-color: #fff;
     position: absolute;
@@ -87,7 +88,7 @@ th {
     border-top: 2px solid var(--borde);
     border-bottom: 2px solid var(--borde);
     background-color: var(--granate);
-    color: #fff;
+    color: var(--blanc);
     text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
     font-weight: normal;
 
@@ -97,7 +98,7 @@ th .any {
     font-weight: normal;
     display: block;
     text-shadow: none;
-    color: rgba(175, 175, 175, 0.4);
+    color: rgba(141, 0, 0, 0.697);
 }
 tr:nth-child(2) th {
     padding: 5px;
@@ -108,7 +109,7 @@ td {
     /*border-bottom: 1px solid rgba(0,0,0,0.05);*/
 }
 td>span {
-    color: #363636;
+    color: #ff8800;
     padding: 5px;
     display: block;
     border: 2px solid transparent;
@@ -116,7 +117,7 @@ td>span {
 }
 
 td:nth-child(even)>span {
-    background-color: rgba(0,0,0,0.02);
+    background-color: rgb(229, 255, 0);
 }
 td:last-child>span,
 td:nth-child(6)>span {
@@ -125,19 +126,19 @@ td:nth-child(6)>span {
 td.avui>span {
     font-weight: bold;
     background-color: var(--actiu);
-    color: #fff;
-    border: 2px solid rgba(0,0,0,0.1);
+    color: var(--blanc);
+    border: 2px solid rgb(111, 255, 0)
 }
 td.fora > span {
     opacity: 0.2;
 }
 td > span:hover {
     background: var(--mouseSobre);
-    color: #fff;
+    color: var(--blanc);
 }
 .boto-next, .boto-prev {
     background: var(--fonsBoto);
-    color: #fff;
+    color: var(--blanc);
     font-family: inherit;
     border: none;
     font-size: 18px;
@@ -156,7 +157,7 @@ td > span:hover {
 .boto-prev { left: 10px; padding-left: 1px;}
 .boto-next:hover,
 .boto-prev:hover {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 255, 26, 0.834)
 }
 button:hover { cursor: pointer; }
 button:focus { outline: none; }
