@@ -9,19 +9,26 @@
     <style>
         :root{
             --primeraFila:#451952;
-            --fontFinde:#662549;
-            
+
             --fontMes: white;
             --fontAny: grey;
+            --fontDies: black;
+            --fontFinde:#662549;
+
+
             --fonsBoto: rgba(0,0,0,0.1);
             --fletxa: white;
+
+
             --diesSetmana: white;
 
             --fonsTaula: #eaeaea;
             --granate: #662549;
             --rosa: #AE445A;
+
             --actiu: #F39F5A;
             --mouseSobre: pink;
+
             --blanc: white;
 
             --borde: #1F1717;
@@ -98,7 +105,7 @@ th .any {
     font-weight: normal;
     display: block;
     text-shadow: none;
-    color: rgba(141, 0, 0, 0.697);
+    color: var(--fontAny);
 }
 tr:nth-child(2) th {
     padding: 5px;
@@ -109,7 +116,7 @@ td {
     /*border-bottom: 1px solid rgba(0,0,0,0.05);*/
 }
 td>span {
-    color: #ff8800;
+    color: var(--fontDies);
     padding: 5px;
     display: block;
     border: 2px solid transparent;
