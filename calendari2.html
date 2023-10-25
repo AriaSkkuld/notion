@@ -8,6 +8,8 @@
 
     <style>
         :root{
+
+        /*COLORS*/
             --primeraFila:#451952;
 
             --fontMes: white;
@@ -36,9 +38,11 @@
 
             --blanc: white;
 
-            --borde: #1F1717;
+            --borde: #25252559;
             --bordeExterior: #1F1717;
             --bordeActiu: rgba(20, 20, 20, 0.163);
+
+        /*Valors*/
 
         }
 
@@ -72,7 +76,7 @@ table {
     table-layout: fixed;
     border: solid 2pt var(--bordeExterior);
     box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
-    background-color: #fff;
+    /*background-color: #fff;*/
     position: absolute;
 }
 
@@ -83,6 +87,12 @@ td,th {
 th {
     padding: 5px;
 }
+
+
+tr{
+    border: solid 1.5px var(--borde);
+}
+
 tr:first-child th {
     font-size: 16px;
     font-weight: bold;
@@ -97,9 +107,9 @@ td:last-child, th:last-child {
 
 th {
     /*border-top: 1px solid rgba(0,0,0,0.1);
-    border-right: 1px solid rgba(0,0,0,0.1);*/
+    border-right: 1px solid rgba(0,0,0,0.1);
     border-top: 2px solid var(--borde);
-    border-bottom: 2px solid var(--borde);
+    border-bottom: 2px solid var(--borde);*/
     background-color: var(--granate);
     color: var(--blanc);
     text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
@@ -118,8 +128,8 @@ tr:nth-child(2) th {
 }
 td {
     padding: 0;
-    border:solid 2px var(--borde);
-    /*border-bottom: 1px solid rgba(0,0,0,0.05);*/
+    /*border:solid 2px var(--borde);
+    border-bottom: 1px solid rgba(0,0,0,0.05);*/
 }
 td>span {
     color: var(--fontDies);
