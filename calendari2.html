@@ -23,16 +23,21 @@
             --diesSetmana: white;
 
             --fonsTaula: #eaeaea;
+            --fonsTaula2: #cecaca44;
+
+
             --granate: #662549;
             --rosa: #AE445A;
 
             --actiu: #F39F5A;
             --mouseSobre: pink;
+            --mouseSobreFont: white;
 
             --blanc: white;
 
             --borde: #1F1717;
             --bordeExterior: #1F1717;
+            --bordeActiu: rgba(20, 20, 20, 0.163);
 
         }
 
@@ -124,7 +129,7 @@ td>span {
 }
 
 td:nth-child(even)>span {
-    background-color: rgb(229, 255, 0);
+    background-color: var(--fonsTaula2);
 }
 td:last-child>span,
 td:nth-child(6)>span {
@@ -133,15 +138,15 @@ td:nth-child(6)>span {
 td.avui>span {
     font-weight: bold;
     background-color: var(--actiu);
-    color: var(--blanc);
-    border: 2px solid rgb(111, 255, 0)
+    color: var(--mouseSobreFont);
+    border: 2px solid var(--bordeActiu);
 }
 td.fora > span {
     opacity: 0.2;
 }
 td > span:hover {
     background: var(--mouseSobre);
-    color: var(--blanc);
+    color: var(--mouseSobreFont);
 }
 .boto-next, .boto-prev {
     background: var(--fonsBoto);
