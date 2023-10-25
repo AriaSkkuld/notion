@@ -8,10 +8,20 @@
 
     <style>
         :root{
-            --lila:#451952;
+            --primeraFila:#451952;
+            --fontMes: white;
+            --fontAny: grey;
+            --fonsBoto: rgba(0,0,0,0.1);
+            --fletxa: white;
+            --diesSetmana: white;
+            --fontFinde:#662549;
+            --fonsTaula: #eaeaea;
             --granate: #662549;
             --rosa: #AE445A;
-            --groc: #F39F5A;
+            --actiu: #F39F5A;
+            --mouseSobre: pink;
+
+            --borde: #1F1717;
         }
 
         body {
@@ -51,7 +61,7 @@ table {
 
 td,th {
     text-align: center;
-    background-color: #eaeaea; /*fondo taula interior*/
+    background-color: var(--fonsTaula); /*fondo taula interior*/
 }
 th {
     padding: 5px;
@@ -60,7 +70,7 @@ tr:first-child th {
     font-size: 16px;
     font-weight: bold;
     font-variant-caps: all-small-caps;
-    background-color: var(--lila);
+    background-color: var(--primeraFila);
     /*border-left: none;
     border-top: none;*/
 }
@@ -91,7 +101,7 @@ tr:nth-child(2) th {
 }
 td {
     padding: 0;
-    border:solid darkgrey 2px;
+    border:solid 2px var(--borde);
     /*border-bottom: 1px solid rgba(0,0,0,0.05);*/
 }
 td>span {
@@ -107,11 +117,11 @@ td:nth-child(even)>span {
 }
 td:last-child>span,
 td:nth-child(6)>span {
-    color: #9b59b6;
+    color: #15ff00;
 }
 td.avui>span {
     font-weight: bold;
-    background-color: #9b59b6;
+    background-color: var(--actiu);
     color: #fff;
     border: 2px solid rgba(0,0,0,0.1);
 }
@@ -119,11 +129,11 @@ td.fora > span {
     opacity: 0.2;
 }
 td > span:hover {
-    background: #a57cb6;
+    background: var(--mouseSobre);
     color: #fff;
 }
 .boto-next, .boto-prev {
-    background: rgba(0,0,0,0.1);
+    background: var(--fonsBoto);
     color: #fff;
     font-family: inherit;
     border: none;
